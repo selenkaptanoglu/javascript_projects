@@ -1,0 +1,53 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: background .5s ease;
+}
+
+.mode {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(69, 69, 69);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    transition: background .5s ease;
+
+    .moon {
+        color: #fff;
+        width: 80px;
+        height: 80px;
+        background-image: url(./images/moon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .sun {
+        width: 80px;
+        height: 80px;
+        background-image: url(./images/sun.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ball {
+        border-radius: 50px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        transition: all 0.5s ease;
+    }
+}
